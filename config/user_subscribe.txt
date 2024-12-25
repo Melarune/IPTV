@@ -18,3 +18,4 @@ https://raw.githubusercontent.com/xzw832/cmys/main/S_CCTV.txt
 https://raw.githubusercontent.com/xzw832/cmys/main/S_weishi.txt
 https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整套直播源/l.txt
 https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整套直播源/kk.txt
+http://175.178.251.183:6689/live.txt
