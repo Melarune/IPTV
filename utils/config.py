@@ -116,7 +116,7 @@ class ConfigManager:
             for origin in self.config.get(
                 "Settings",
                 "origin_type_prefer",
-                fallback="hotel,multicast,subscribe,online_search",
+                fallback="",
             ).split(",")
             if origin.strip().lower()
         ]
@@ -298,6 +298,22 @@ class ConfigManager:
     @property
     def open_empty_category(self):
         return self.config.getboolean("Settings", "open_empty_category", fallback=True)
+
+    @property
+    def app_port(self):
+        return os.environ.get("APP_PORT") or self.config.getint("Settings", "app_port", fallback=8000)
+
+    @property
+    def open_supply(self):
+        return self.config.getboolean("Settings", "open_supply", fallback=True)
+
+    @property
+    def update_time_position(self):
+        return self.config.get("Settings", "update_time_position", fallback="top")
+
+    @property
+    def time_zone(self):
+        return self.config.get("Settings", "time_zone", fallback="Asia/Shanghai")
 
     def load(self):
         """
